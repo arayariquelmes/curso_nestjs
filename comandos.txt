@@ -1,0 +1,18 @@
+#Instalar nest js
+yarn global add @nestjs/cli
+#revisar version de nest instalada
+nest -v
+
+#ejecutar app en modo desarrollo
+yarn start:dev
+#Generar un modulo
+nest g module nombreModulo
+#Crear controlador
+nest g controller tasks --no-spec
+#Crear servicio
+nest g service tasks --no-spec
+
+#Instalar validadores
+yarn add class-validator class-transformer
+#Instalar orm
+ yarn add typeorm @nestjs/typeorm pg
