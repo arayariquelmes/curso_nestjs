@@ -2,7 +2,8 @@
 yarn global add @nestjs/cli
 #revisar version de nest instalada
 nest -v
-
+#Generar nuevo proyecto
+nest new nombreProyecto --directory nombreDirectorio
 #ejecutar app en modo desarrollo
 yarn start:dev
 #Generar un modulo
@@ -16,3 +17,6 @@ nest g service tasks --no-spec
 yarn add class-validator class-transformer
 #Instalar orm
  yarn add typeorm @nestjs/typeorm pg
+
+#Generar servicio sin crear carpeta
+nest g service  NombreServicios directorio/subdirectorio --flat
